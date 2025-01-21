@@ -3,11 +3,11 @@
  */
 export interface ApiSettings {
   /** Base URL for the Random User API */
-  baseUrl: string
+  readonly baseUrl: string
   /** Seed for consistent random user data */
-  seed: string
+  readonly seed: string
   /** Number of results per page */
-  resultsPerPage: number
+  readonly resultsPerPage: number
 }
 
 /**
@@ -15,11 +15,11 @@ export interface ApiSettings {
  */
 export interface PaginationSettings {
   /** Initial page number when loading the application */
-  initialPage: number
+  readonly initialPage: number
   /** Distance in pixels from bottom before loading next page */
-  scrollThreshold: number
+  readonly scrollThreshold: number
   /** Page size */
-  pageSize: number
+  readonly pageSize: number
 }
 
 /**
@@ -27,7 +27,7 @@ export interface PaginationSettings {
  */
 export interface PerformanceSettings {
   /** Delay in milliseconds between scroll event handling */
-  throttleDelay: number
+  readonly throttleDelay: number
 }
 
 /**
@@ -35,9 +35,9 @@ export interface PerformanceSettings {
  */
 export interface Settings {
   /** API configuration settings */
-  api: ApiSettings
+  readonly api: ApiSettings
   /** Pagination configuration settings */
-  pagination: PaginationSettings
+  readonly pagination: PaginationSettings
   /** Performance optimization settings */
-  performance: PerformanceSettings
+  readonly performance: PerformanceSettings
 }

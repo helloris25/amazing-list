@@ -3,11 +3,11 @@
  */
 export interface UserName {
   /** Title of address (e.g., Mr., Mrs., Ms.) */
-  title: string
+  readonly title: string
   /** User's first name */
-  first: string
+  readonly first: string
   /** User's last name */
-  last: string
+  readonly last: string
 }
 
 /**
@@ -15,11 +15,11 @@ export interface UserName {
  */
 export interface UserPicture {
   /** URL of the large size image */
-  large: string
+  readonly large: string
   /** URL of the medium size image */
-  medium: string
+  readonly medium: string
   /** URL of the thumbnail image */
-  thumbnail: string
+  readonly thumbnail: string
 }
 
 /**
@@ -27,11 +27,11 @@ export interface UserPicture {
  */
 export interface User {
   /** Object containing user's name information */
-  name: UserName
+  readonly name: UserName
   /** User's email address */
-  email: string
+  readonly email: string
   /** Object containing profile picture URLs */
-  picture: UserPicture
+  readonly picture: UserPicture
 }
 
 /**
@@ -39,17 +39,17 @@ export interface User {
  */
 export interface RandomUserResponse {
   /** Array of user objects */
-  results: User[]
+  readonly results: User[]
   /** Response metadata */
   info: {
     /** Current page number */
-    page: number
+    readonly page: number
     /** Number of results */
-    results: number
+    readonly results: number
     /** Seed used for random generation */
-    seed: string
+    readonly seed: string
     /** API version */
-    version: string
+    readonly version: string
   }
 }
 
