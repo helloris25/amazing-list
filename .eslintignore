@@ -1,0 +1,38 @@
+# Зависимости
+node_modules
+.pnp
+.pnp.js
+
+# Сборка
+dist
+build
+docs
+
+# Кэш и логи
+.cache
+*.log
+.DS_Store
+
+# Локальные файлы
+*.local
+.env.local
+.env.*.local
+
+# IDE
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Husky
+.husky/_
+
+coverage
+*.d.ts
+*.config.ts
+*.config.js
+*.config.cjs
+**/__tests__/** 

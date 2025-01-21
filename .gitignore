@@ -1,10 +1,13 @@
 # Dependencies
 node_modules
+.pnp
+.pnp.js
 package-lock.json
 
 # Build
 dist
-dist-ssr
+build
+docs
 
 # Local env files
 *.local
@@ -36,4 +39,7 @@ docs
 Thumbs.db
 
 # Vite
-.vite 
+.vite
+
+# Husky
+.husky/_ 

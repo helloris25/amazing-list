@@ -1,0 +1,45 @@
+# Зависимости
+node_modules
+.pnp
+.pnp.js
+
+# Сборка
+dist
+build
+docs
+
+# Кэш и логи
+.cache
+*.log
+.DS_Store
+
+# Локальные файлы
+*.local
+.env.local
+.env.*.local
+
+# IDE
+.idea
+.vscode
+
+# Husky
+.husky/_
+
+# Конфигурационные файлы
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Документация
+*.md
+
+# Тесты
+**/__tests__/**
+*.spec.ts
+*.test.ts
+
+# Другие файлы
+.gitignore
+.eslintignore
+.prettierignore
+.env* 
