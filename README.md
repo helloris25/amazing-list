@@ -2,6 +2,14 @@
 
 An application for displaying an infinite list of users using Vue 3 and TypeScript.
 
+## Live Demo
+
+Explore the application here: [Amazing List](https://amazing-list.vercel.app/)
+
+## Documentation
+
+Read the full documentation here: [Amazing List Documentation](https://amazing-list-docs.vercel.app/)
+
 ## Requirements
 
 - Node.js v18.0.0 or higher
@@ -144,3 +152,4 @@ npm run docs:dev
 ### Application Configuration
 
 Main application settings are located in `config/settings`. Edit files in this directory to change application behavior.
+
