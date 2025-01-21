@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Build
+dist
+dist-ssr
+
+# Local env files
+*.local
+.env*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated docs
+docs
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Vite
+.vite 

@@ -1,0 +1,28 @@
+{
+  "name": "amazing-list-app",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "docs": "npx typedoc",
+    "docs:dev": "nodemon --watch src -e js,ts,vue --exec 'npm run docs'",
+    "typecheck": "vue-tsc --noEmit",
+    "typecheck:watch": "vue-tsc --noEmit --watch"
+  },
+  "dependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/tsconfig": "^0.5.1",
+    "vite": "^5.0.0",
+    "vue-tsc": "^1.8.27",
+    "typescript": "^5.3.3",
+    "typedoc": "^0.25.7",
+    "typedoc-plugin-vue": "^1.1.0",
+    "nodemon": "^3.0.2"
+  }
+} 
