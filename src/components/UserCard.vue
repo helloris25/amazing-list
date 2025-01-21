@@ -1,9 +1,9 @@
 <template>
   <div class="user-card">
-    <img :src="user.picture.medium" :alt="fullName" class="user-avatar" />
+    <img :src="user.picture.medium" loading="lazy" :alt="fullName" class="user-avatar" />
     <div class="user-info">
       <h3>{{ fullName }}</h3>
-      <p>{{ user.email }}</p>
+      <p :title="user.email">{{ user.email }}</p>
     </div>
   </div>
 </template>
@@ -46,6 +46,7 @@
 
   .user-info {
     flex: 1;
+    overflow: hidden;
   }
 
   .user-info h3 {
@@ -55,5 +56,8 @@
   .user-info p {
     margin: 0;
     color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>
